@@ -1,4 +1,4 @@
-const ws = new WebSocket("ws://localhost:7000");
+const ws = new WebSocket("wss://netology-ahj-ws-backend.onrender.com");
 
 import { RegForm } from "./reg-form";
 
