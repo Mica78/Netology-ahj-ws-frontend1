@@ -1,0 +1,55 @@
+body {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+.users {
+  width: 40%;
+  border: 2px solid black;
+  overflow-y: scroll;
+  height: 35rem;
+}
+
+.login-label {
+  text-align: center;
+}
+
+#reg {
+  padding: 10%;
+  margin: 5%;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+.btn-login {
+  margin-top: 5px;
+  text-align: center;
+}
+
+.chatui {
+  flex-direction: column;
+  width: 100%;
+  margin-left: 1%;
+}
+
+.chat {
+  height: 35rem;
+  overflow-y: scroll;
+  border: 2px solid black;
+}
+
+.message, .user {
+  margin: 2%;
+}
+
+.message_text {
+  font-size: 1rem;
+  margin-top: 0;
+}
+
+.author {
+  font-size: 0.7rem;
+  margin-bottom: 2px;
+}
