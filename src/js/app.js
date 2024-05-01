@@ -58,7 +58,6 @@ ws.addEventListener("close", (e) => {
 ws.addEventListener("message", (e) => {
   try {
     const data = JSON.parse(e.data);
-    console.log(Object.keys(data)[0], Object.keys(data), data, data["users"]);
     switch (Object.keys(data)[0]) {
       case "Autorization":
         currentUser = data["Autorization"];
@@ -79,8 +78,6 @@ ws.addEventListener("message", (e) => {
         }
         break;
       case "users":
-        console.log(data.users, document.querySelector(".users"));
-
         document.querySelector(".users").innerHTML = "";
 
         for (const user of data.users) {
